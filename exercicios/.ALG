@@ -1,0 +1,1 @@
+terminei até os exercicios da cladia :)
