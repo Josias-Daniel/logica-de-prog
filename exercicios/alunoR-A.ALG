@@ -7,11 +7,18 @@ inicio
       Escreval("Segunda nota: ")
       Leia(N2)
       R<- (N1 + N2) / 2
-      se (R >= 6) entao
+      se (R >= 7) entao
          Escreval("Nota Média: ", R)
          Escreval("Aluno Aprovado")
       senao
-           Escreval("Nota Média: ", R)
-           Escreval("Aluno Reprovado")
+           se (R >= 5 ) e (R <= 6.9)entao
+             Escreval("Nota Média: ", R)
+             Escreval("Aluno aluno de recuperacao")
+           senao
+                Escreval("Nota Média: ", R)
+                Escreval("Aluno Reprovado")
+      FimSe
       FimSe
 fimalgoritmo
+
+
