@@ -1,11 +1,16 @@
 algoritmo "semnome"
 var
-   jd,valor: real
+   jd,valor,np: real
 inicio
       jd <- 0
-      Enquanto (jd <= 10) faca
-             Escreval("Digite o primeiro valor ")
-             leia(valor)
-             jd <- jd + 1
+      Escreval("quer qual valor inicial?")
+      Leia(jd)
+      Escreval("qual valor do salto entre os números?")
+      Leia(valor)
+      Escreval("quer contar até quanto?")
+      Leia(np)
+      Enquanto (jd <= np) faca
+               escreval(jd)
+             jd <- jd + valor]
       fimenquanto
 fimalgoritmo
