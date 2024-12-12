@@ -1,25 +1,27 @@
 algoritmo "semnome"
 var
-   jd,valors,np,m,p: real
+   Qalunos,rep,nota,Mnota: real
+   Aluno,Maluno: Caractere
 inicio
-      jd <- 0
-      p <- -1
-      Escreval("quer qual valor inicial?")
-                     Leia(jd)
-      Escreval("quer contar até quanto?")
-                     Leia(np)
-      Enquanto (jd < np) faca
-               escreval("quer somar quantos?")
-               Leia(valors)
-               Se (valors > m)entao
-                  m <- valors
-               fimse
-               Se (p + valors < valors) entao
-               p <- valors
-               fimse
-             jd <- jd + valors
-             escreval("valor atual  é igual a: ",jd)
-      fimenquanto
-      escreval("mair valor somado foi de: ",m)
-      Escreval("menor valor somado foi de: ",p)
+      escreval("Qual a quantidade de alunos? ")
+      Leia(Qalunos)
+      Enquanto (Rep < Qalunos) faca
+                   Escreval("Qual o nome do aluno?")
+                   Leia(Aluno)
+                   Escreval("Qual a nota do aluno?")
+                   Leia(nota)
+                   Rep <- Rep + 1
+                   Escreval("Nome é: ",Aluno)
+                   Escreval("Nota é: ",nota)
+                   Se (nota > Mnota)entao
+                            Mnota <- nota
+                   fimse
+                   se (Mnota = nota)entao
+                                 Maluno <- Aluno
+                   Fimse
+      Fimenquanto
+
+      Escreval("A maior nota foi de ",Mnota," Pelo ", Maluno)
+
+
 fimalgoritmo
