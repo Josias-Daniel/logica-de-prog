@@ -32,7 +32,9 @@ Repita
       Se (S = "F") e (idade > 30) e (heat = "Grisalho")Entao
          PM <- PM + 1
       FimSe
-      
+Escreval("Quer continuar?[S/N]")
+Leia(R)
+limpatela
 ate(R = "N")
 
 Escreval("Homens compatives: ",PH)
